@@ -1,6 +1,5 @@
 <template>
-  <div class="context"> 
-    <vue-particles id="tsparticles" :particlesInit="particlesInit" :clickEffect="true" :options="options" />
+  <div class="context">
     <div class="tool"></div>
     <div class="menu-box">
       <nav>
@@ -23,9 +22,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import { ref, onMounted } from "vue";
-import { loadFull } from 'tsparticles'
-import { options } from "./utils/options";
+import { ref, onMounted } from "vue"; 
 interface Navigation {
   id: string;
   title: string;
@@ -82,86 +79,83 @@ const clickMenu = (id: string) => {
   get_web_tag((id))
 }
 
-const particlesInit = async (engine: any) => {
-  await loadFull(engine)
-}
 onMounted(async () => {
   init();
 });
 </script>
-<style scoped> 
-.context {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-}
+<style scoped> .context {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   align-items: center;
+   background-image: url("./assets/bj.jpg");
+ }
 
-.tool {
-  height: 200px;
-}
+ .tool {
+   height: 200px;
+ }
 
-.menu-box {
-  width: 1000px;
-}
+ .menu-box {
+   width: 1000px;
+ }
 
-.nav-list {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  cursor: pointer;
-  line-height: 30px;
-  position: relative;
-  overflow: hidden;
-  white-space: nowrap;
-  padding-top: 10px;
-  font-size: 18px;
+ .nav-list {
+   list-style-type: none;
+   padding: 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   cursor: pointer;
+   line-height: 30px;
+   position: relative;
+   overflow: hidden;
+   white-space: nowrap;
+   padding-top: 10px;
+   font-size: 18px;
 
-}
+ }
 
-.active {
-  font-weight: 600;
-  border-bottom: 2px solid #007bff;
-}
+ .active {
+   font-weight: 600;
+   border-bottom: 2px solid #007bff;
+ }
 
-.nav-item {
-  margin-right: 10px;
-  min-width: 100px;
-  padding-bottom: 5px;
-}
+ .nav-item {
+   margin-right: 10px;
+   min-width: 100px;
+   padding-bottom: 5px;
+ }
 
-.nav-item a {
-  text-decoration: none;
-  color: #007bff;
-}
+ .nav-item a {
+   text-decoration: none;
+   color: #007bff;
+ }
 
-.nav-item a.active {
-  font-weight: bold;
-  color: #ff5f5f;
-}
+ .nav-item a.active {
+   font-weight: bold;
+   color: #ff5f5f;
+ }
 
-.tag {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  justify-content: space-between;
-  align-items: flex-start;
-  cursor: pointer;
-}
+ .tag {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   justify-content: space-between;
+   align-items: flex-start;
+   cursor: pointer;
+ }
 
-.tag-item {
-  width: 160px;
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  border-radius: 10px;
-}
+ .tag-item {
+   width: 160px;
+   height: 150px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 20px;
+   border-radius: 10px;
+ }
 </style>
