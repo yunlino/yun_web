@@ -13,7 +13,7 @@
       <div class="tag">
         <div class="tag-item" v-for="(web, index) in webs" :key="index">
           <div class="tag-item-content">
-            <img :src="'/images/' + web.icon" alt="" />
+            <img :src="prx+'/images/' + web.icon" alt="" />
           </div>
           <div class="tag-item-title">{{ web.name }}</div>
         </div>
@@ -33,17 +33,19 @@ interface NavigationItem {
   url: string;
   icon: string;
 }
- 
+const isProduction = import.meta.env.MODE === 'production';
 const menus = ref<Navigation[]>([]);
 const active_menu_id = ref('1')
 const webs = ref<NavigationItem[]>([])
 
-const menu_json = "./json/menu.json"
-const web_json = "./json/webs.json"
+const prx = ref('')
 
 const init = async () => {
+  if (isProduction) {
+    prx.value = '/yunlin_web'
+  }
   try {
-    const response = await fetch(menu_json);
+    const response = await fetch(prx.value+"/json/menu.json");
     if (!response.ok) {
       throw new Error("Failed to fetch navigation data");
     }
@@ -57,7 +59,7 @@ const init = async () => {
 
 const get_web_tag = async (id: string) => {
   try {
-    const response = await fetch(web_json);
+    const response = await fetch(prx.value+"/json/webs.json");
     if (!response.ok) {
       throw new Error("Failed to fetch navigation data");
     }
