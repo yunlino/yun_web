@@ -1,7 +1,12 @@
 {
     "1":[
         {
-            "name":"豆包",
+            "name":"云效",
+            "url":"https://www.doubao.com/chat/",
+            "icon":"doubao8.png"
+        },
+        {
+            "name":"码云",
             "url":"https://www.doubao.com/chat/",
             "icon":"doubao8.png"
         },
@@ -11,54 +16,49 @@
             "icon":"doubao8.png"
         },
         {
-            "name":"豆包",
+            "name":"阿里ICON",
             "url":"https://www.doubao.com/chat/",
             "icon":"doubao8.png"
         },
         {
-            "name":"豆包",
+            "name":"百度翻译",
             "url":"https://www.doubao.com/chat/",
             "icon":"doubao8.png"
         },
         {
-            "name":"豆包",
+            "name":"灌顶云",
             "url":"https://www.doubao.com/chat/",
             "icon":"doubao8.png"
         },
         {
-            "name":"豆包",
+            "name":"Teambition",
             "url":"https://www.doubao.com/chat/",
-            "icon":"doubao8.png"
+            "icon":"teambition.svg"
         },
         {
-            "name":"豆包",
-            "url":"https://www.doubao.com/chat/",
-            "icon":"doubao8.png"
+            "name":"微信文件传输",
+            "url":"https://szfilehelper.weixin.qq.com/",
+            "icon":"weixin.svg"
         },
         {
-            "name":"豆包",
-            "url":"https://www.doubao.com/chat/",
-            "icon":"doubao8.png"
+            "name":"163邮箱",
+            "url":"https://mail.163.com/",
+            "icon":"163mail.svg"
         },
         {
-            "name":"豆包",
-            "url":"https://www.doubao.com/chat/",
-            "icon":"doubao8.png"
+            "name":"哔哩哔哩",
+            "url":"https://www.bilibili.com/",
+            "icon":"bilibili.png"
+        }, 
+        {
+            "name":"Element-Plus",
+            "url":"https://element-plus.org/zh-CN/component/button.html",
+            "icon":"element_plus.png"
         },
         {
-            "name":"豆包",
-            "url":"https://www.doubao.com/chat/",
-            "icon":"doubao8.png"
-        },
-        {
-            "name":"豆包",
-            "url":"https://www.doubao.com/chat/",
-            "icon":"doubao8.png"
-        },
-        {
-            "name":"豆包",
-            "url":"https://www.doubao.com/chat/",
-            "icon":"doubao8.png"
+            "name":"VXE-Table",
+            "url":"https://vxetable.cn/v4_old/#/table/start/install",
+            "icon":"vxe_table.png"
         }
     ]
 }

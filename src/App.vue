@@ -11,9 +11,9 @@
         </ul>
       </nav>
       <div class="tag">
-        <div class="tag-item" v-for="(web, index) in webs" :key="index">
+        <div class="tag-item" v-for="(web, index) in webs" :key="index" @click="clickWeb(web)">
           <div class="tag-item-content">
-            <img :src="prx+'/images/' + web.icon" alt="" />
+            <img :src="prx + '/images/' + web.icon" alt="" />
           </div>
           <div class="tag-item-title">{{ web.name }}</div>
         </div>
@@ -45,7 +45,7 @@ const init = async () => {
     prx.value = '/yun_web'
   }
   try {
-    const response = await fetch(prx.value+"/json/menu.json");
+    const response = await fetch(prx.value + "/json/menu.json");
     if (!response.ok) {
       throw new Error("Failed to fetch navigation data");
     }
@@ -59,7 +59,7 @@ const init = async () => {
 
 const get_web_tag = async (id: string) => {
   try {
-    const response = await fetch(prx.value+"/json/webs.json");
+    const response = await fetch(prx.value + "/json/webs.json");
     if (!response.ok) {
       throw new Error("Failed to fetch navigation data");
     }
@@ -70,6 +70,10 @@ const get_web_tag = async (id: string) => {
   }
 }
 
+
+const clickWeb = (web: NavigationItem) => {
+  window.open(web.url, '_blank')
+}
 const clickMenu = (id: string) => {
   active_menu_id.value = id
   get_web_tag((id))
