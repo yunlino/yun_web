@@ -4,17 +4,18 @@
     <div class="menu-box">
       <nav>
         <ul class="nav-list">
-          <li v-for="(menu, index) in menus" :key="index" @click="clickMenu(menu.id)" :class="['nav-item',active_menu_id==menu.id?'active':'']">
+          <li v-for="(menu, index) in menus" :key="index" @click="clickMenu(menu.id)"
+            :class="['nav-item', active_menu_id == menu.id ? 'active' : '']">
             {{ menu.title }}
           </li>
         </ul>
       </nav>
       <div class="tag">
-        <div class="tag-item" v-for="(web,index) in webs" :key="index"> 
+        <div class="tag-item" v-for="(web, index) in webs" :key="index">
           <div class="tag-item-content">
-             <img :src="'/images/'+web.icon" alt=""/>
+            <img :src="'/images/' + web.icon" alt="" />
           </div>
-          <div class="tag-item-title">{{web.name}}</div>
+          <div class="tag-item-title">{{ web.name }}</div>
         </div>
       </div>
     </div>
@@ -27,22 +28,22 @@ interface Navigation {
   title: string;
   key: string;
 }
-export interface NavigationItem {
+interface NavigationItem {
   name: string;
   url: string;
   icon: string;
 }
-
-export interface NavigationGroup {
-  [key: string]: NavigationItem[];
-}
+ 
 const menus = ref<Navigation[]>([]);
-const active_menu_id=ref('1')
-const webs=ref<NavigationItem[]>([])
+const active_menu_id = ref('1')
+const webs = ref<NavigationItem[]>([])
+
+const menu_json = "./json/menu.json"
+const web_json = "./json/webs.json"
 
 const init = async () => {
   try {
-    const response = await fetch("/json/menu.json");
+    const response = await fetch(menu_json);
     if (!response.ok) {
       throw new Error("Failed to fetch navigation data");
     }
@@ -54,21 +55,21 @@ const init = async () => {
   }
 };
 
-const get_web_tag=async (id:string)=>{
+const get_web_tag = async (id: string) => {
   try {
-    const response = await fetch("/json/webs.json");
+    const response = await fetch(web_json);
     if (!response.ok) {
       throw new Error("Failed to fetch navigation data");
     }
-    const data = await response.json(); 
-    webs.value=data[id]
+    const data = await response.json();
+    webs.value = data[id]
   } catch (error) {
     console.error("Error loading navigation data:", error);
   }
 }
 
 const clickMenu = (id: string) => {
-  active_menu_id.value=id
+  active_menu_id.value = id
   get_web_tag((id))
 }
 onMounted(async () => {
@@ -84,12 +85,15 @@ onMounted(async () => {
   flex-wrap: nowrap;
   align-items: center;
 }
+
 .tool {
   height: 200px;
 }
+
 .menu-box {
   width: 1000px;
 }
+
 .nav-list {
   list-style-type: none;
   padding: 0;
@@ -103,9 +107,10 @@ onMounted(async () => {
   white-space: nowrap;
   padding-top: 10px;
   font-size: 18px;
-  
+
 }
-.active{
+
+.active {
   font-weight: 600;
   border-bottom: 2px solid #007bff;
 }
@@ -125,16 +130,18 @@ onMounted(async () => {
   font-weight: bold;
   color: #ff5f5f;
 }
-.tag{
+
+.tag {
   display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    justify-content: space-between;
-    align-items: flex-start;
-    cursor: pointer;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+  align-items: flex-start;
+  cursor: pointer;
 }
-.tag-item{
+
+.tag-item {
   width: 160px;
   height: 150px;
   display: flex;
@@ -142,7 +149,6 @@ onMounted(async () => {
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
-  border-radius: 10px; 
+  border-radius: 10px;
 }
- 
 </style>
