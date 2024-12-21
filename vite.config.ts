@@ -6,7 +6,7 @@ export default defineConfig(() => {
     plugins: [vue()],
     base: "/yun_web/",
     build: {
-      outDir: 'dist'
+      outDir: 'docs'
     },
   }
 })
