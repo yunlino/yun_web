@@ -42,7 +42,7 @@ const prx = ref('')
 
 const init = async () => {
   if (isProduction) {
-    prx.value = '/yunlin_web'
+    prx.value = '/yun_web'
   }
   try {
     const response = await fetch(prx.value+"/json/menu.json");
