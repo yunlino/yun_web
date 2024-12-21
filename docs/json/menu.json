@@ -18,15 +18,5 @@
         "id": "4",
         "title": "写作管理",
         "key": "el-icon-menu"
-    },
-    {
-        "id": "5",
-        "title": "部门管理",
-        "key": "el-icon-office-building"
-    },
-    {
-        "id": "6",
-        "title": "字典管理",
-        "key": "el-icon-s-order"
-    } 
+    }
 ]

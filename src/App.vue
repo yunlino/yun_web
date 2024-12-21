@@ -143,13 +143,13 @@ onMounted(async () => {
    flex-direction: row;
    flex-wrap: wrap;
    align-content: flex-start;
-   justify-content: space-between;
+   justify-content: flex-start;
    align-items: flex-start;
    cursor: pointer;
  }
 
  .tag-item {
-   width: 160px;
+   width: 166px;
    height: 150px;
    display: flex;
    flex-direction: column;

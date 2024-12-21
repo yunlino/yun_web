@@ -1,64 +1,115 @@
 {
-    "1":[
+    "1": [
         {
-            "name":"云效",
-            "url":"https://codeup.aliyun.com/",
-            "icon":"aliyun.svg"
+            "name": "云效",
+            "url": "https://codeup.aliyun.com/",
+            "icon": "aliyun.svg"
         },
         {
-            "name":"码云",
-            "url":"https://gitee.com/chinaio",
-            "icon":"mayun.svg"
+            "name": "码云",
+            "url": "https://gitee.com/chinaio",
+            "icon": "mayun.svg"
         },
         {
-            "name":"豆包",
-            "url":"https://www.doubao.com/chat/",
-            "icon":"doubao8.png"
+            "name": "豆包",
+            "url": "https://www.doubao.com/chat/",
+            "icon": "doubao8.png"
         },
         {
-            "name":"阿里ICON",
-            "url":"https://www.iconfont.cn/",
-            "icon":"shiliangtu.png"
+            "name": "阿里ICON",
+            "url": "https://www.iconfont.cn/",
+            "icon": "shiliangtu.png"
         },
         {
-            "name":"百度翻译",
-            "url":"https://fanyi.baidu.com/",
-            "icon":"fanyi.svg"
+            "name": "百度翻译",
+            "url": "https://fanyi.baidu.com/",
+            "icon": "fanyi.svg"
         },
         {
-            "name":"灌顶云",
-            "url":"https://cjyc.beautop.cn/gdy/preview/main_frame/index.html#/login",
-            "icon":"other.svg"
+            "name": "灌顶云",
+            "url": "https://cjyc.beautop.cn/gdy/preview/main_frame/index.html#/login",
+            "icon": "other.svg"
         },
         {
-            "name":"Teambition",
-            "url":"https://www.teambition.com/",
-            "icon":"teambition.svg"
+            "name": "Teambition",
+            "url": "https://www.teambition.com/",
+            "icon": "teambition.svg"
         },
         {
-            "name":"微信文件传输",
-            "url":"https://szfilehelper.weixin.qq.com/",
-            "icon":"weixin.svg"
+            "name": "微信文件传输",
+            "url": "https://szfilehelper.weixin.qq.com/",
+            "icon": "weixin.svg"
         },
         {
-            "name":"163邮箱",
-            "url":"https://mail.163.com/",
-            "icon":"163mail.svg"
+            "name": "163邮箱",
+            "url": "https://mail.163.com/",
+            "icon": "163mail.svg"
         },
         {
-            "name":"哔哩哔哩",
-            "url":"https://www.bilibili.com/",
-            "icon":"bilibili.png"
-        }, 
-        {
-            "name":"Element-Plus",
-            "url":"https://element-plus.org/zh-CN/component/button.html",
-            "icon":"element_plus.png"
+            "name": "哔哩哔哩",
+            "url": "https://www.bilibili.com/",
+            "icon": "bilibili.png"
         },
         {
-            "name":"VXE-Table",
-            "url":"https://vxetable.cn/v4_old/#/table/start/install",
-            "icon":"vxe_table.png"
+            "name": "Element-Plus",
+            "url": "https://element-plus.org/zh-CN/component/button.html",
+            "icon": "element_plus.png"
+        },
+        {
+            "name": "VXE-Table",
+            "url": "https://vxetable.cn/v4_old/#/table/start/install",
+            "icon": "vxe_table.png"
         }
+    ],
+    "2": [
+        {
+            "name": "Vue3",
+            "url": "https://v3.cn.vuejs.org/",
+            "icon": "vue.png"
+        },
+        {
+            "name": "Vite",
+            "url": "https://cn.vitejs.dev/",
+            "icon": "vite.svg"
+        },
+        {
+            "name": "Element-Plus",
+            "url": "https://element-plus.org/zh-CN/component/button.html",
+            "icon": "element_plus.png"
+        },
+        {
+            "name": "VXE-Table",
+            "url": "https://vxetable.cn/v4_old/#/table/start/install",
+            "icon": "vxe_table.png"
+        }
+    ],
+    "3": [
+        {
+            "name": "Char_GPT",
+            "url": "https://chat.openai.com/",
+            "icon": "chart.png"
+        },
+        {
+            "name": "豆包",
+            "url": "https://www.doubao.com/chat/",
+            "icon": "doubao8.png"
+        },
+        {
+            "name": "即梦AL",
+            "url": "https://jimeng.jianying.com/",
+            "icon": "jimeng.png"
+        }
+    ],
+    "4": [
+        {
+            "name": "作家助手",
+            "url": "https://write.qq.com/portal/dashboard/books",
+            "icon": "write.png"
+        },
+        {
+            "name": "番茄",
+            "url": "https://fanqienovel.com/writer/zone/",
+            "icon": "fanqie.png"
+        } 
     ]
 }
