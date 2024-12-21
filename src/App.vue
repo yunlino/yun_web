@@ -1,5 +1,6 @@
 <template>
-  <div class="context">
+  <div class="context"> 
+    <vue-particles id="tsparticles" :particlesInit="particlesInit" :clickEffect="true" :options="options" />
     <div class="tool"></div>
     <div class="menu-box">
       <nav>
@@ -13,7 +14,7 @@
       <div class="tag">
         <div class="tag-item" v-for="(web, index) in webs" :key="index" @click="clickWeb(web)">
           <div class="tag-item-content">
-            <img :src="prx + '/images/' + web.icon" alt="" />
+            <img style="width: 64px;height:64px" :src="prx + '/images/' + web.icon" alt="" />
           </div>
           <div class="tag-item-title">{{ web.name }}</div>
         </div>
@@ -23,6 +24,8 @@
 </template>
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
+import { loadFull } from 'tsparticles'
+import { options } from "./utils/options";
 interface Navigation {
   id: string;
   title: string;
@@ -78,11 +81,15 @@ const clickMenu = (id: string) => {
   active_menu_id.value = id
   get_web_tag((id))
 }
+
+const particlesInit = async (engine: any) => {
+  await loadFull(engine)
+}
 onMounted(async () => {
   init();
 });
 </script>
-<style scoped>
+<style scoped> 
 .context {
   width: 100%;
   height: 100%;

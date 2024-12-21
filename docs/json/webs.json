@@ -2,13 +2,13 @@
     "1":[
         {
             "name":"云效",
-            "url":"https://www.doubao.com/chat/",
-            "icon":"doubao8.png"
+            "url":"https://codeup.aliyun.com/",
+            "icon":"aliyun.svg"
         },
         {
             "name":"码云",
-            "url":"https://www.doubao.com/chat/",
-            "icon":"doubao8.png"
+            "url":"https://gitee.com/chinaio",
+            "icon":"mayun.svg"
         },
         {
             "name":"豆包",
@@ -17,22 +17,22 @@
         },
         {
             "name":"阿里ICON",
-            "url":"https://www.doubao.com/chat/",
-            "icon":"doubao8.png"
+            "url":"https://www.iconfont.cn/",
+            "icon":"shiliangtu.png"
         },
         {
             "name":"百度翻译",
-            "url":"https://www.doubao.com/chat/",
-            "icon":"doubao8.png"
+            "url":"https://fanyi.baidu.com/",
+            "icon":"fanyi.svg"
         },
         {
             "name":"灌顶云",
-            "url":"https://www.doubao.com/chat/",
-            "icon":"doubao8.png"
+            "url":"https://cjyc.beautop.cn/gdy/preview/main_frame/index.html#/login",
+            "icon":"other.svg"
         },
         {
             "name":"Teambition",
-            "url":"https://www.doubao.com/chat/",
+            "url":"https://www.teambition.com/",
             "icon":"teambition.svg"
         },
         {
