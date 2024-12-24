@@ -129,9 +129,24 @@
             "icon": "github.svg"
         },
         {
+            "name": "阿里ICON",
+            "url": "https://www.iconfont.cn/",
+            "icon": "shiliangtu.png"
+        },
+        {
             "name": "Echart",
             "url": "https://echarts.apache.org/examples/zh/index.html#chart-type-line",
             "icon": "echart.svg"
+        },
+        {
+            "name": "Yapi(灌顶云)",
+            "url": "http://cjyc.beautop.cn:32865/project/11/interface/api/",
+            "icon": "yapi.svg"
+        },
+        {
+            "name": "表单设计器",
+            "url": "http://120.92.142.115:81/vform3/",
+            "icon": "vfrom.png"
         }
     ]
 }
