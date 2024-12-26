@@ -98,9 +98,12 @@
             "name": "即梦AL",
             "url": "https://jimeng.jianying.com/",
             "icon": "jimeng.png"
-        }
-    ],
-    "4": [
+        },
+        {
+            "name": "配音工具",
+            "url": "https://peiyinshenqi.com",
+            "icon": "peiyin.png"
+        },
         {
             "name": "作家助手",
             "url": "https://write.qq.com/portal/dashboard/books",
@@ -110,6 +113,23 @@
             "name": "番茄",
             "url": "https://fanqienovel.com/writer/zone/",
             "icon": "fanqie.png"
+        }
+    ],
+    "4": [
+        {
+            "name": "163邮箱",
+            "url": "https://mail.163.com/",
+            "icon": "163mail.svg"
+        },
+        {
+            "name": "126邮箱",
+            "url": "https://mail.126.com/",
+            "icon": "126mail.svg"
+        },
+        {
+            "name": "yeah邮箱",
+            "url": "https://www.yeah.net/",
+            "icon": "yeah.svg"
         }
     ],
     "5": [
@@ -147,6 +167,18 @@
             "name": "表单设计器",
             "url": "http://120.92.142.115:81/vform3/",
             "icon": "vfrom.png"
+        }
+    ],
+    "6":[
+        {
+            "name": "JSONtoTS",
+            "url": "https://yunlino.github.io/jsontots/",
+            "icon": "jsontots.svg"
+        },
+        {
+            "name": "X-tool",
+            "url": "https://yunlino.github.io/xVueTool/#/index",
+            "icon": "xtool.svg"
         }
     ]
 }

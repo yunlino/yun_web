@@ -11,17 +11,22 @@
     },
     {
         "id": "3",
-        "title": "AL网站",
+        "title": "AL|写作",
         "key": "el-icon-s-custom"
     },
     {
         "id": "4",
-        "title": "写作管理",
+        "title": "管理网站",
         "key": "el-icon-menu"
     },
     {
         "id": "5",
         "title": "日常开发",
+        "key": "el-icon-menu"
+    },
+    {
+        "id": "6",
+        "title": "在线工具",
         "key": "el-icon-menu"
     }
 ]
